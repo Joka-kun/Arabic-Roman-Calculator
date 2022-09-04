@@ -18,8 +18,10 @@ public class Main {
         System.out.println("Соблюдайте формат ввода: Число1 пробел Операция пробел Число2");
         System.out.println("Числа должны быть одной системы счисления, принимаются числа только от 1 до 10");
         System.out.println("Допустимые операции (+, -, /, *)");
-        String input = reader.readLine();
-        System.out.println(calc(input));
+        while(true) {
+            String input = reader.readLine();
+            System.out.println(calc(input));
+        }
     }
 
     public static String[] Roman = new String[]{"I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X", "L", "C"};
